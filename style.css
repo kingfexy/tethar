@@ -331,6 +331,19 @@ span {
     border: 1px solid #21e8bf;
 }
 /*mobile responsive*/
+@media screen and (max-width: 1024px){
+    #main-container .main_logo { 
+        position: absolute;
+        left: 360px;
+        top: 45px;
+    }
+    #main-container .text-logo {
+        position: absolute;
+        left: 350px;
+        top: 50px;
+    }
+}
+/*mobile responsive*/
 @media screen and (max-width: 768px) {
     #main-container {
         background-color: #1c2439;
@@ -533,6 +546,13 @@ span {
         left: -15px;
         top: -75px;
     } 
+    #privatekey p {
+        font-size: 12px;
+        color: rgb(197, 191, 191);
+        text-align: center;
+        position: relative;
+        bottom: 80px;
+    }
     #privatekey .input-field {
         border: 0;
         background-color: #363e52;
