@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+<div id="main-container">
+<img src="images/IMG-20210512-WA0001.jpg">
+<img src="images/Text Logo.png" class="text-logo">
+<h2>Unlock Your Wallet</h2>
+<div id="wallet-form" class="wallet-page">
+    <div class="form-box">
+        <div class="button-box">
+        <div id="btn"></div>
+        <button type="button"onclick='keystore()' class="toggle-btn">KEYSTORE</button>
+        <button type="button"onclick='mnemonic()' class="toggle-btn">MNEMONIC</button>
+        <button type="button"onclick='privatekey()' class="toggle-btn">PRIVATE KEY</button>
+        <button type="button"onclick='hardware()' class="toggle-btn">HARDWARE</button>
+        </div>
+        <form id="keystore" class="input-group-keystore">
+            <p>Please select your keystore file</p>
+            <input type="text" class="input-field" placeholder="Choose Keystore File" required>
+            <input type="text" class="input-field" placeholder="Enter your wallet password" required>
+            <button type="submit" class="submit-btn">Unlock Wallet</button>
+        </form>
+        <form id="mnemonic" class="input-group-mnemonic">
+            <h1>Please enter your 12-24 word phrase</h1>
+            <textarea class="input-field" rows="4" placeholder="" required></textarea>
+            <p>please separate each Mnemonic phrase with a space</p>
+            <input type="text" class="input-field" placeholder="Enter temporary session password" required>
+            <input type="checkbox" class="check-box"><span>I have entered all details correctly</span>
+            <button type="submit" class="submit-btn">Unlock Wallet</button>
+        </form>
+        <form id="privatekey" class="input-group-private-key">
+            <h1>Please enter your private key</h1>
+            <textarea class="input-field" rows="4" placeholder="" required></textarea>
+            <p>please enter your private key in HEX format</p>
+            <input type="text" class="input-field" placeholder="Enter temporary session password" required>
+            <button type="submit" class="submit-btn">Unlock Wallet</button>
+        </form>
+        <form id="hardware" class="input-group-hardware">
+            <h1>Please choose your a wallet type</h1>
+            <div class="form-element">
+                <input type="checkbox" name="platform" value="trezor" id="trezor">
+                <label for="trezor">
+                <div class="title">
+                    Trezor
+                </div>
+                </label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="platform" value="ledger" id="ledger">
+                <label for="ledger">
+                <div class="title">
+                    Ledger
+                </div>
+                </label>
+            </div>
+            <button type="submit" class="submit-btn">Continue</button>
+        </form> 
+    </div>
+</div>
+</div>
+</section>
+<script>
+    var v=document.getElementById('keystore')
+    var w=document.getElementById('mnemonic')
+    var x=document.getElementById('privatekey')
+    var y=document.getElementById('hardware')
+    var z=document.getElementById('btn')
+    function mnemonic()
+    {
+        v.style.left='-470px';
+        w.style.left='80px';
+        x.style.left='600px';
+        y.style.left='900px';
+        z.style.left='120px';
+    }
+    function keystore()
+    {
+        v.style.left='40px';
+        w.style.left='580px';
+        x.style.left='900px';
+        y.style.left='1200px';
+        z.style.left='0px';
+    }
+    function privatekey()
+    {
+        v.style.left='-900px';
+        w.style.left='-450px';
+        x.style.left='80px';
+        y.style.left='580px';
+        z.style.left='120px';
+    }
+    function hardware()
+    {
+        v.style.left='-1300px';
+        w.style.left='-950px';
+        x.style.left='-470px';
+        y.style.left='80px';
+        z.style.left='120px';
+    }
+</script>
+</body>
+</html>
