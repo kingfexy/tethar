@@ -334,12 +334,12 @@ span {
 @media screen and (max-width: 1024px){
     #main-container .main_logo { 
         position: absolute;
-        left: 360px;
+        left: 350px;
         top: 45px;
     }
     #main-container .text-logo {
         position: absolute;
-        left: 350px;
+        left: 340px;
         top: 50px;
     }
 }
@@ -457,7 +457,7 @@ span {
         position: absolute;
     }
     #keystore {
-        left: 50px;
+        left: 45px;
     }
     #keystore p {
         color: rgb(197, 191, 191);
@@ -472,7 +472,7 @@ span {
         margin: 5px auto;
         position: relative;
         bottom: 50px;
-        left: 17px;
+        left: 20px;
         text-align: center;
         font-size: 14px;  
     }
@@ -523,7 +523,7 @@ span {
     }
     #mnemonic .submit-btn {
         position: relative;
-        bottom: 55px;
+        bottom: 60px;
         background-color: #363e52;
         color: #fff;
         font-size: 15;
@@ -547,19 +547,305 @@ span {
         top: -75px;
     } 
     #privatekey p {
-        font-size: 12px;
+        font-size: 10px;
         color: rgb(197, 191, 191);
         text-align: center;
         position: relative;
-        bottom: 80px;
+        bottom: 88px;
+        right: 30px;
     }
     #privatekey .input-field {
         border: 0;
         background-color: #363e52;
         margin: 15px auto;
         position: relative;
+        bottom: 90px;
+        font-size: 14px;
+        right: 14px;
+    }
+    #privatekey .submit-btn {
+        position: relative;
+        bottom: 13px;
+        background-color: #363e52;
+        color: #fff;
+        font-size: 15;
+        right: 25px;
+    }
+    #hardware h1 {
+        color: rgb(197, 191, 191);
+        font-size: 15px;
+        font-weight: 100;
+        text-align: center;
+        position: relative;
+        bottom: 60px;
+        right: 18px;
+    }
+    .form-element label {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        height: 40%;
+        cursor: pointer;
+        border: 0.5px solid rgb(197, 191, 191);
+        position: relative;
+        bottom: 30px;
+        box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: all 200ms ease-in-out;
+        position: relative;
+        right: 25px;
+    }
+    #hardware .submit-btn {
+        background-color: #363e52;
+        color: #fff;
+        font-size: 15;
+        position: absolute;
+        top: 200px;
+    }
+}
+/*mobile responsive*/
+@media screen and (max-width: 425px) {
+    #main-container {
+        background-color: #1c2439;
+        height: 140vh;
+        width: 500px;
+        position: relative;
+        z-index: 10;
+    }
+    #main-container img {
+        padding-top: 20px;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        
+    }
+    #main-container .main_logo {
+        height: 40px;
+        position: absolute;
+        left: 165px;
+        top: 35px;
+    }
+    #main-container .text-logo {
+        height: 30px;
+        position: absolute;
+        left: 145px;
+        top: 40px;
+    }
+    #main-container h2 {
+        color: #fff;
+        text-align: center;
+        position: relative;
+        top: 110px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    #wallet-form {
+        display: block;
+    }
+    .form-box {
+        width: 325px;
+        height: 300px;
+        position: relative;
+        margin: 3px auto;
+        background: #191e2b;
+        padding: 5px auto;
+        overflow: hidden;
+        top: 125px;
+    }
+    .button-box {
+        width: 300px;
+        margin: 10px 2px 2px 10px;
+        position: relative;
+        border: none;
+        display: flex;
+    }
+    .toggle-btn {
+        padding: 10px 10px;
+        background-color: #191e2b;
+        color:#41495e;
+        border: 0;
+        cursor: pointer;
+        background: transparent;
+        outline: none;
+        position: relative;
+        font-size: 10px;
+    }
+    .input-group-keystore {
+        top: 110px;
+        position: absolute;
+        width: 250px;
+        transition: ease-in-out;
+    }
+    .input-group-mnemonic {
+        top: 110px;
+        position: absolute;
+        width: 250px;
+        transition: ease-in-out;
+    }
+    .input-group-private-key {
+        top: 120px;
+        position: absolute;
+        width: 270px;
+        transition: ease-in-out;
+    }
+    .input-group-hardware {
+        top: 120px;
+        position: absolute;
+        width: 250px;
+        transition: ease-in-out;
+    }
+    #keystore {
+        left: 35px;
+    }
+    #keystore p {
+        color: rgb(197, 191, 191);
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        bottom: 60px;
+        left: 5px;
+    }
+    #keystore .input-field{
+        border: dotted 1px;
+        margin: 5px auto;
+        position: relative;
+        bottom: 50px;
+        left: 15px;
+        text-align: center;
+        font-size: 14px;  
+    }
+    #keystore .submit-btn {
+        position: relative;
+        top: 30px;
+        background-color: #363e52;
+        left: 10px;
+        color: #fff;
+        font-size: 15;
+    }
+    #mnemonic {
+        left: 500px;
+    }
+    #mnemonic h1 {
+        color: rgb(197, 191, 191);
+        font-size: 15px;
+        font-weight: 100;
+        text-align: center;
+        position: relative;
+        bottom: 60px;
+        right: 35px;
+    }
+    #mnemonic p {
+        font-size: 10px;
+        color: rgb(197, 191, 191);
+        text-align: center;
+        position: relative;
         bottom: 70px;
-        font-size: 18px;
+        right: 35px;
+    }
+    #mnemonic textarea {
+        color: white;
+        font-size: 15;
+        height: 40px;
+        position: relative;
+        left: -25px;
+        top: -60px;
+    }
+    #mnemonic .input-field {
+        border: 0;
+        background-color: #363e52;
+        margin: 10px auto;
+        position: relative;
+        bottom: 70px;
+        font-size: 14px;
+        right: 25px;
+    }
+    #mnemonic .submit-btn {
+        position: relative;
+        bottom: 95px;
+        background-color: #363e52;
+        color: #fff;
+        font-size: 15;
+        right: 35px;
+    }
+    #privatekey h1 {
+        color: rgb(197, 191, 191);
+        font-size: 15px;
+        font-weight: 100;
+        text-align: center;
+        position: relative;
+        bottom: 70px;
+        right: 50px;
+    }
+    #privatekey textarea {
+        color: white;
+        font-size: 15;
+        height: 45px;
+        position: relative;
+        left: -27px;
+        top: -75px;
+    } 
+    #privatekey p {
+        font-size: 10px;
+        color: rgb(197, 191, 191);
+        text-align: center;
+        position: relative;
+        bottom: 88px;
+        right: 50px;
+    }
+    #privatekey .input-field {
+        border: 0;
+        background-color: #363e52;
+        margin: 15px auto;
+        position: relative;
+        bottom: 90px;
+        font-size: 14px;
+        right: 26px;
+    }
+    #privatekey .submit-btn {
+        position: relative;
+        bottom: 50px;
+        background-color: #363e52;
+        color: #fff;
+        font-size: 15;
+        right: 45px;
+    }
+    #hardware h1 {
+        color: rgb(197, 191, 191);
+        font-size: 15px;
+        font-weight: 100;
+        text-align: center;
+        position: relative;
+        bottom: 70px;
+        right: 35px;
+    }
+    .form-element label {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        height: 40%;
+        cursor: pointer;
+        border: 0.5px solid rgb(197, 191, 191);
+        position: relative;
+        bottom: 50px;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: all 200ms ease-in-out;
+        position: relative;
+        right: 35px;
+    }
+    .form-element .title {
+        font-size: 15px;
+        color: rgb(197, 191, 191);
+        padding: 10px 0px;
+        transition: all 200ms ease-in-out;
+    }
+    #hardware .submit-btn {
+        background-color: #363e52;
+        color: #fff;
+        font-size: 15;
+        position: absolute;
+        top: 150px;
+        right: 60px;
     }
 
 }
