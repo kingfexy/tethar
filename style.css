@@ -622,13 +622,13 @@ span {
     #main-container .main_logo {
         height: 40px;
         position: absolute;
-        left: 165px;
+        left: 155px;
         top: 35px;
     }
     #main-container .text-logo {
         height: 30px;
         position: absolute;
-        left: 145px;
+        left: 135px;
         top: 40px;
     }
     #main-container h2 {
@@ -807,7 +807,7 @@ span {
         background-color: #363e52;
         color: #fff;
         font-size: 15;
-        right: 45px;
+        right: 47px;
     }
     #hardware h1 {
         color: rgb(197, 191, 191);
@@ -860,6 +860,7 @@ span {
         left: 170px;
         top: 50px;
     }
+    
 }
 
 
