@@ -847,8 +847,19 @@ span {
         top: 150px;
         right: 60px;
     }
-
 }
-
+/*mobile responsive*/
+@media screen and (max-width: 600px) {
+    #main-container .main_logo { 
+        position: absolute;
+        left: 145px;
+        top: 45px;
+    }
+    #main-container .text-logo {
+        position: absolute;
+        left: 130px;
+        top: 50px;
+    }
+}
 
 
