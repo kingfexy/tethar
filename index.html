@@ -23,10 +23,14 @@
         </div>
         <form id="keystore" class="input-group-keystore">
             <p>Please select your keystore file</p>
-            <input type="text" class="input-field" placeholder="Choose Keystore File" required>
+            <div class="file-upload-wrapper" data-text="Choose a keystore file">
+                <input name="file-upload-field" type="file" class="file-upload-field" value="">
+            </div>
+            
             <input type="text" class="input-field" placeholder="Enter your wallet password" required>
             <button type="submit" class="submit-btn">Unlock Wallet</button>
         </form>
+        
         <form id="mnemonic" class="input-group-mnemonic">
             <h1>Please enter your 12-24 word phrase</h1>
             <textarea class="input-field" rows="4" placeholder="" required></textarea>
@@ -66,44 +70,6 @@
 </div>
 </div>
 </section>
-<script>
-    var v=document.getElementById('keystore')
-    var w=document.getElementById('mnemonic')
-    var x=document.getElementById('privatekey')
-    var y=document.getElementById('hardware')
-    var z=document.getElementById('btn')
-    function mnemonic()
-    {
-        v.style.left='-470px';
-        w.style.left='80px';
-        x.style.left='600px';
-        y.style.left='900px';
-        z.style.left='120px';
-    }
-    function keystore()
-    {
-        v.style.left='40px';
-        w.style.left='580px';
-        x.style.left='900px';
-        y.style.left='1200px';
-        z.style.left='0px';
-    }
-    function privatekey()
-    {
-        v.style.left='-900px';
-        w.style.left='-450px';
-        x.style.left='80px';
-        y.style.left='580px';
-        z.style.left='120px';
-    }
-    function hardware()
-    {
-        v.style.left='-1300px';
-        w.style.left='-950px';
-        x.style.left='-470px';
-        y.style.left='80px';
-        z.style.left='120px';
-    }
-</script>
+<script src="app.js"></script>
 </body>
 </html>
