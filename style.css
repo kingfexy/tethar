@@ -852,12 +852,12 @@ span {
 @media screen and (max-width: 600px) {
     #main-container .main_logo { 
         position: absolute;
-        left: 145px;
+        left: 190px;
         top: 45px;
     }
     #main-container .text-logo {
         position: absolute;
-        left: 130px;
+        left: 170px;
         top: 50px;
     }
 }
