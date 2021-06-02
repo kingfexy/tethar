@@ -604,6 +604,20 @@ span {
     }
 }
 /*mobile responsive*/
+@media screen and (max-width: 600px) {
+    #main-container .main_logo { 
+        position: absolute;
+        left: 190px;
+        top: 45px;
+    }
+    #main-container .text-logo {
+        position: absolute;
+        left: 170px;
+        top: 50px;
+    }
+    
+}
+/*mobile responsive*/
 @media screen and (max-width: 425px) {
     #main-container {
         background-color: #1c2439;
@@ -848,19 +862,6 @@ span {
         right: 60px;
     }
 }
-/*mobile responsive*/
-@media screen and (max-width: 600px) {
-    #main-container .main_logo { 
-        position: absolute;
-        left: 190px;
-        top: 45px;
-    }
-    #main-container .text-logo {
-        position: absolute;
-        left: 170px;
-        top: 50px;
-    }
-    
-}
+
 
 
