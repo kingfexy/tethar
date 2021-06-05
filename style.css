@@ -38,7 +38,7 @@
     height: 450px;
     position: relative;
     margin: 5px auto;
-    background: #191e2b;
+    background: #242f4b;
     padding: 5px;
     overflow: hidden;
     top: 150px;
@@ -111,6 +111,7 @@
     margin: auto;
     border: 0;
     outline: none;
+    background: linear-gradient(#28bcef,#21e8bf)
 }
 
 .check-box {
@@ -132,6 +133,7 @@ span {
     text-align: center;
     position: relative;
     bottom: 60px;
+    left: 20px;
 }
 .file-upload-wrapper {
     position: relative;
@@ -428,7 +430,7 @@ span {
         height: 350px;
         position: relative;
         margin: 3px auto;
-        background: #191e2b;
+        background: #242f4b;
         padding: 5px auto;
         overflow: hidden;
         top: 150px;
@@ -689,6 +691,39 @@ span {
         left: 170px;
         top: 50px;
     }
+    #keystore .submit-btn {
+        position: relative;
+        top: 60px;
+        background-color: #363e52;
+        left: 10px;
+        color: #fff;
+        font-size: 15;
+    }
+    .file-upload-wrapper::after {
+        content: attr(data-text);
+        font-size: 20px;
+        position: absolute;
+        top: -50px;
+        left: -20px;
+        background: #363e52;
+        display: block;
+        width: 250px;
+        height: 30px;
+        pointer-events: none;
+        line-height: 40px;
+        color: rgb(138, 138, 138);
+        border: dotted 1px;
+    }
+    #keystore .input-field{
+        border: none 1px;
+        margin: 5px auto;
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+        text-align: center;
+        font-size: 14px;
+        width: 250px;  
+    }
     
 }
 /*mobile responsive*/
@@ -735,7 +770,7 @@ span {
         height: 300px;
         position: relative;
         margin: 3px auto;
-        background: #191e2b;
+        background: #242f4b;
         padding: 5px auto;
         overflow: hidden;
         top: 125px;
@@ -790,14 +825,12 @@ span {
         font-size: 20px;
         position: absolute;
         top: -50px;
-        right: 60px;
+        left: -20px;
         background: #363e52;
-        padding: 10px 0px;
         display: block;
-        width: 220px;
+        width: 250px;
         height: 30px;
         pointer-events: none;
-        z-index: 20;
         line-height: 40px;
         color: rgb(138, 138, 138);
         border: dotted 1px;
@@ -830,14 +863,14 @@ span {
         margin: 5px auto;
         position: relative;
         bottom: 50px;
-        left: 30px;
+        left: 10px;
         text-align: center;
         font-size: 14px;
-        width: 220px;  
+        width: 250px;  
     }
     #keystore .submit-btn {
         position: relative;
-        top: 30px;
+        top: 20px;
         background-color: #363e52;
         left: 10px;
         color: #fff;
