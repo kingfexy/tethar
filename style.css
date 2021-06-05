@@ -512,7 +512,7 @@ span {
     }
     .file-upload-wrapper::after {
         content: attr(data-text);
-        font-size: 20px;
+        font-size: 15px;
         position: absolute;
         top: -50px;
         right: 60px;
@@ -701,7 +701,7 @@ span {
     }
     .file-upload-wrapper::after {
         content: attr(data-text);
-        font-size: 20px;
+        font-size: 15px;
         position: absolute;
         top: -50px;
         left: -20px;
@@ -822,7 +822,7 @@ span {
     }
     .file-upload-wrapper::after {
         content: attr(data-text);
-        font-size: 20px;
+        font-size: 15px;
         position: absolute;
         top: -50px;
         left: -20px;
@@ -831,7 +831,7 @@ span {
         width: 250px;
         height: 30px;
         pointer-events: none;
-        line-height: 40px;
+        line-height: 25px;
         color: rgb(138, 138, 138);
         border: dotted 1px;
     }
