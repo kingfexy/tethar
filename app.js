@@ -15,8 +15,8 @@ function mnemonic()
 }
 function keystore()
 {
-    v.style.left='40px';
-    w.style.left='580px';
+    v.style.left='-320px';
+    w.style.left='80px';
     x.style.left='900px';
     y.style.left='1200px';
     z.style.left='0px';

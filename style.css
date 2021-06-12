@@ -124,7 +124,7 @@ span {
     position: absolute;
 }
 #keystore {
-    left: 40px;
+    left: 340px;
 }
 
 #keystore p {
@@ -186,7 +186,7 @@ span {
 }
 #keystore .submit-btn {
     position: relative;
-    top: 100px;
+    top: 117px;
     background-color: #363e52;
     left: 30px;
     color: #fff;
@@ -234,9 +234,18 @@ span {
     bottom: 103px;
     font-size: 12px;
 }
+#mnemonic h3 {
+    position: relative;
+    top: -115px;
+    left: 50px;
+    font-size: 11px;
+    text-align: center;
+    width: 70%;
+    color: #9e376c;
+}
 #mnemonic .submit-btn {
     position: relative;
-    bottom: 75px;
+    bottom: 110px;
     background-color: #363e52;
     color: #fff;
     font-size: 15;
@@ -292,6 +301,8 @@ span {
     background-color: #363e52;
     color: #fff;
     font-size: 15;
+    position: relative;
+    top: 19px;
 }
 #privatekey .submit-btn:hover {
     background: linear-gradient(#28bcef,#21e8bf);
@@ -312,7 +323,7 @@ span {
     color: #fff;
     font-size: 15;
     position: relative;
-    top: 25px;
+    top: 42px;
 }
 #hardware .submit-btn:hover {
     background: linear-gradient(#28bcef,#21e8bf);
@@ -554,7 +565,7 @@ span {
     }
     #keystore .submit-btn {
         position: relative;
-        top: 70px;
+        top: 65px;
         background-color: #363e52;
         left: 10px;
         color: #fff;
@@ -597,9 +608,18 @@ span {
         font-size: 14px;
         right: 15px;
     }
+    #mnemonic h3 {
+        position: relative;
+        top: -115px;
+        left: -15px;
+        font-size: 11px;
+        text-align: center;
+        width: 90%;
+        color: #9e376c;
+    }
     #mnemonic .submit-btn {
         position: relative;
-        bottom: 60px;
+        bottom: 110px;
         background-color: #363e52;
         color: #fff;
         font-size: 15;
@@ -641,7 +661,7 @@ span {
     }
     #privatekey .submit-btn {
         position: relative;
-        bottom: 13px;
+        top: -10px;
         background-color: #363e52;
         color: #fff;
         font-size: 15;
@@ -698,6 +718,30 @@ span {
         left: 10px;
         color: #fff;
         font-size: 15;
+    }
+    #mnemonic h3 {
+        position: relative;
+        top: -115px;
+        left: -15px;
+        font-size: 11px;
+        text-align: center;
+        width: 90%;
+        color: #9e376c;
+    }
+    #mnemonic .submit-btn {
+        position: relative;
+        bottom: 110px;
+        background-color: #363e52;
+        color: #fff;
+        font-size: 15;
+    }
+    #privatekey .submit-btn {
+        position: relative;
+        top: -10px;
+        background-color: #363e52;
+        color: #fff;
+        font-size: 15;
+        right: 25px;
     }
     .file-upload-wrapper::after {
         content: attr(data-text);
@@ -913,9 +957,18 @@ span {
         font-size: 14px;
         right: 25px;
     }
+    #mnemonic h3 {
+        position: relative;
+        top: -132px;
+        left: -15px;
+        font-size: 10px;
+        text-align: center;
+        width: 90%;
+        color: #9e376c;
+    }
     #mnemonic .submit-btn {
         position: relative;
-        bottom: 95px;
+        bottom: 130px;
         background-color: #363e52;
         color: #fff;
         font-size: 15;
@@ -957,12 +1010,13 @@ span {
     }
     #privatekey .submit-btn {
         position: relative;
-        bottom: 50px;
+        top: -50px;
         background-color: #363e52;
         color: #fff;
         font-size: 15;
         right: 47px;
     }
+    
     #hardware h1 {
         color: rgb(197, 191, 191);
         font-size: 15px;
@@ -1022,45 +1076,85 @@ span {
     top: 150px;
     left: 550px;
 }
+.bar-img {
+    width: 20%;
+    height: 30vh;
+    position: relative;
+    top: 150px;
+}
+.bar-container {
+    height: 10px;
+    position: relative;
+    top: 60px;
+}
 @media screen and (max-width: 1024px){
     .admin h1 {
-        text-align: ;
+        text-align: center;
         position: relative;
-        left: 100px;
-        top: 50px;
+        left: 350px;
+        top: 150px;
         font-size: 17px;
+    }
+    .bar-img {
+        width: 15%;
+        height: 30vh;
+        position: relative;
+        top: 150px;
     }
 }
 @media screen and (max-width: 768px){
     .admin h1 {
-        text-align: ;
+        text-align: center;
         position: relative;
-        left: 50px;
-        top: 50px;
+        left: 250px;
+        top: 150px;
         font-size: 15px;
+    }
+    .bar-img {
+        width: 15%;
+        height: 30vh;
+        position: relative;
+        top: 150px;
     }
 }
 @media screen and (max-width: 600px){
     .admin h1 {
-        text-align: ;
+        text-align: center;
         position: relative;
         left: 150px;
-        top: 50px;
+        top: 150px;
         font-size: 17px;
+    }
+    .bar-img {
+        width: 40%;
+        height: 40vh;
+        position: relative;
+        top: 150px;
     }
 }
 @media screen and (max-width: 425px){
     .admin h1 {
-        text-align: ;
+        text-align: center;
         position: relative;
         left: 50px;
         top: 50px;
         font-size: 15px;
     }
+    .bar-img {
+        width: 40%;
+        height: 40vh;
+        position: relative;
+        top: 70px;
+    }
+    .bar-container {
+        height: 10px;
+        position: relative;
+        top: 30px;
+    }
 }
 @media screen and (max-width:320px){
     .admin h1 {
-        text-align: ;
+        text-align: center;
         position: relative;
         left: 10px;
         top: 50px;
@@ -1068,5 +1162,7 @@ span {
         width: 300px;
     }
 }
+
+
 
 

