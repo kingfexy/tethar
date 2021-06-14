@@ -811,7 +811,7 @@ span {
     }
     .form-box {
         width: 325px;
-        height: 300px;
+        height: 310px;
         position: relative;
         margin: 3px auto;
         background: #242f4b;
@@ -1142,7 +1142,7 @@ span {
     }
     .bar-img {
         width: 50%;
-        height: 40vh;
+        height: 30vh;
         position: relative;
         top: 70px;
     }
