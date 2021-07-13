@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en" >
+<![endif]-->
+<html class="no-js" lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Admin</title>
+
+	<!-- normalize.css and modernizr.js help with browser compatibility -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
-    <div class="admin">
-        <div class="bar-container">
-            <img src="images/IMG-20210512-WA0001.jpg" class="bar-main_logo">
-            <img src="images/loggo-text.png" class="bar-text-logo">
+    <div id="root">
+    <div class="row">
+        <div class="col-md-12">
+            <img  src="img/theta logo.png" class="main-logo">
+        <div style="display: flex; justify-content: center; align-items: center;">    
+            <img src="img/Bar-code.png" class="bar-img">
         </div>
-        <img src="images/Bar-code.png" class="bar-img">
-        <h1>Chat ADMIN for verification code</h1>
+            <h1 class="Admin-title">Chat ADMIN for verification code</h1>
+        </div>
     </div>
+    </div>
+
+<!-- include before </body> tag -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
 </body>
 </html>
